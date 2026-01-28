@@ -261,9 +261,32 @@ footer {
 }
 
 /* MOBILE OPTIMIZATION */
+@media (max-width: 450px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    padding: 15px 20px;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+  }
+  nav a {
+    margin-left: 10px;
+    font-size: 0.9rem;
+  }
+  .logo {
+    font-size: 1.2rem;
+    
+  }
+}
 @media (max-width: 768px) {
   section { padding: 70px 5%; }
   .navbar { padding: 15px 5%; }
   .hero h2 { font-size: 2.2rem; }
   .highlight { transform: scale(1); }
 }
+
