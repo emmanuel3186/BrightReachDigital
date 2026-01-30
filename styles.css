@@ -221,27 +221,6 @@ form button {
   font-size: 0.9rem;
 }
 
-.or {
-  margin: 20px 0;
-  color: #64748b;
-  text-align: center;
-}
-
-.whatsapp {
-  display: inline-block;
-  background: #22c55e;
-  color: #fff;
-  padding: 12px 20px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  text-align: center;
-}
-
-.whatsapp:hover {
-  background: #16a34a;
-}
-
 .submit {
   padding: 15px !important;
   font-weight: 600;
@@ -289,4 +268,5 @@ footer {
   .hero h2 { font-size: 2.2rem; }
   .highlight { transform: scale(1); }
 }
+
 
