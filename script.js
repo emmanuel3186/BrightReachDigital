@@ -1,16 +1,18 @@
- const form = document.getElementById("contactForm");
- const statusMessage = document.getElementById("formStatus");
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
 
-    statusMessage.textContent = "Sending message...";
-    statusMessage.style.color = "#475569";
+      const whatsappText =
+        "Hello Emmanuel,%0A%0A" +
+        "Name: " + name + "%0A" +
+        "Email: " + email + "%0A" +
+        "Project: " + message;
 
-    setTimeout(() => {
-      statusMessage.textContent =
-        "Message sent successfully! We'll get back to you shortly.";
-      statusMessage.style.color = "#16a34a";
-      form.reset();
-    }, 1200);
-  });
+      window.open(
+        "https://wa.me/2349153068210?text=" + whatsappText,
+        "_blank"
+      );
+    });
